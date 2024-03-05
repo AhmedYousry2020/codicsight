@@ -24,8 +24,8 @@
 <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon_152x152.png">
 
 <!-- Google Web Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,200,300,100,500,600,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
 @include('layouts.styles')
 </head>
 
@@ -39,86 +39,87 @@
 <!-- Header -->
 <header id="header" class="fullwidth light">
 
-	<!-- Top Bar -->
-	<div id="top-bar">
-		<div class="container">
-			<div class="module left">
-				<ul class="list-inline">
-					<li><i class="i-before ti-email text-primary"></i>Info@codicsight.com</li>
-					<li><i class="i-before ti-mobile text-primary"></i>123-456-7890
-                    </li>
-				</ul>
-			</div>
-			<div class="module right">
-				<ul class="list-inline">
-					<li><i class="i-before ti-time text-primary"></i>sun to thu 09:00 - 18:00</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
 	<!-- Navigation Bar -->
 	<div id="nav-bar">
 
-		<div class="container">
-			<!-- Logo -->
-			<a class="logo-wrapper" href="index.html">
-				<img class="logo logo-dark" src="{{asset('assets/img/LOGOS-06.png')}}" alt="Okno">
-			</a>
+		<!-- Logo -->
+		<a class="logo-wrapper" href="/">
+			<img class="logo logo-dark" src="{{asset('assets/img/LOGOS-06.png')}}" alt="Okno">
+		</a>
 
-			<nav class="module-group right">
+		<nav class="module-group right">
 
-				<!-- Primary Menu -->
-				<div class="module menu left">
-					<ul id="nav-primary" class="nav nav-primary">
-						<li>
-							<a href="/">{{__('general.home')}}</a>
+			<!-- Primary Menu -->
+			<div class="module menu left">
+				<ul id="nav-primary" class="nav nav-primary">
+                    <li>
+                        <a href="/">{{__('general.home')}}</a>
 
-						</li>
-						<li>
-							<a href="/about-us">{{__('general.about us')}}</a>
+                    </li>
+                    <li>
+                        <a href="/about-us">{{__('general.about us')}}</a>
 
-						</li>
-						<li>
-							<a href="/services">{{__('general.services')}}</a>
+                    </li>
+                    <li>
+                        <a href="/services">{{__('general.services')}}</a>
 
-						</li>
-						<li>
-							<a href="/portfolio">{{__('general.portfolio')}}</a>
+                    </li>
+                    <li>
+                        <a href="/portfolio">{{__('general.portfolio')}}</a>
 
-                        </li>
-						<li class="has-dropdown lang">
-							<a href="#">Language Version</a>
+                    </li>
+                    <li class="has-dropdown lang">
+                        <a href="#">{{app()->getLocale() == 'en' ? __('general.English') : __('general.Arabic') }}</a>
 							<ul>
 								<li><a href="/change-language/en">{{__('general.English')}}</a></li>
 								<li><a href="/change-language/ar">{{__('general.Arabic')}}</a></li>
 
 							</ul>
-						</li>
-					</ul>
-				</div>
-
-				<!-- Language Menu -->
-				<div class="module language left">
-					<ul class="nav nav-primary">
-						<li class="has-dropdown">
-							<a href="#">Eng</a>
-							<ul>
-                                <li><a href="/change-language/en">{{__('general.English')}}</a></li>
-								<li><a href="/change-language/ar">{{__('general.Arabic')}}</a></li>
-
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</nav>
-
-			<!-- Menu Toggle -->
-			<div class="menu-toggle">
-				<a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a>
+                    </li>
+                </ul>
 			</div>
+
+			<!-- Language Menu -->
+			<!-- Language Menu -->
+            <div class="module language left">
+                <ul class="nav nav-primary">
+                    <li class="has-dropdown">
+                        <a href="#">{{app()->getLocale() == 'en' ? __('general.English') : __('general.Arabic') }}</a>
+                        <ul>
+                            <li><a href="/change-language/en">{{__('general.English')}}</a></li>
+                            <li><a href="/change-language/ar">{{__('general.Arabic')}}</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+			<!-- Icons -->
+			<div class="module icons left">
+				<a href="#" class="icon icon-facebook icon-xs"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="icon icon-twitter icon-xs"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="icon icon-google-plus icon-xs"><i class="fa fa-google-plus"></i></a>
+			</div>
+
+		</nav>
+
+		<!-- Menu Toggle -->
+		<div class="menu-toggle">
+			<a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a>
 		</div>
 
+	</div>
+
+	<!-- Notification Bar -->
+	<div id="notification-bar"></div>
+
+	<!-- Search Bar -->
+	<div id="search-bar">
+		<form id="search-form">
+			<input class="search-bar-input" type="text" placeholder="Search...">
+			<button class="search-bar-submit"><i class="ti-search"></i></button>
+		</form>
+		<a href="#" class="search-bar-close" data-toggle="search-bar"><i class="ti-close"></i></a>
 	</div>
 
 
@@ -131,16 +132,16 @@
 
     <div class="container">
         <div class="row mb-80">
-            <div class="col-md-4">
-                <img src="assets/img/avatars/avatar03.jpg" class="img-circle mb-30" alt="">
+            <div class="col-md-4 footer-logo">
+                <img src="assets/img/codic Logo-01.png" class="img-circle mb-30" alt="">
                 <address class="mb-60">
                     <strong>{{__('general.address')}}</strong><br>
-                    A795 Folsom Ave, Suite 600<br>
-                    San Francisco, CA 94107<br><br>
+                    {{__('general.Riyadh')}}
+                    <br><br>
                     <strong>{{__('general.phone')}}</strong><br>
-                    +48 221 909 99<br><br>
+                    0551418444<br><br>
                     <strong>{{__('general.email')}}</strong><br>
-                    <a href="#">your.name@example.com</a><br>
+                    <a href="#">info@codicsight.com</a><br>
                 </address>
             </div>
             <div class="col-md-8">
@@ -171,7 +172,9 @@
 </section>
 <!-- Footer / End -->
 
-
+<a id="back-to-top" href="#" class="btn btn-default btn-filled" style="display: inline">
+    WhatsAPP<i class="fa fa-whatsapp" style="padding: 2px"></i>
+</a>
 
 @include('layouts.scripts')
 

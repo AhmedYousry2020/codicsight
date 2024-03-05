@@ -4,13 +4,13 @@
 <div id="page-title" class="page-title page-title-3 bg-black dark">
 	<div class="bg-image" style="background-image: url(&quot;assets/img/photos/classic_title01.jpg&quot;);"><img src="assets/img/photos/classic_title01.jpg" alt="" style="display: none;"></div>
 	<div class="container">
-		<h1>{{__('general.services')}}</h1>
+		<h1>{{__('general.about us')}}</h1>
 	</div>
 	<div class="breadcrumb-wrapper border-top">
 		<div class="container">
 			<ol class="breadcrumb">
 				<li><a href="index.html">{{__('general.home')}}</a></li>
-				<li class="active">{{__('general.services')}}</li>
+				<li class="active">{{__('general.about us')}}</li>
 			</ol>
 		</div>
 	</div>

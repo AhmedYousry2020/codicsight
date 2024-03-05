@@ -7,3 +7,10 @@
 
 <!-- JS Core -->
 <script src="{{asset('assets/js/core.js')}}"></script>
+
+<script>
+    function showdSingleDetails(e){
+        e.preventDefault();
+        window.location.href='/portfolio-single';
+    }
+</script>

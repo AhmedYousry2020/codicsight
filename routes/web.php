@@ -32,6 +32,12 @@ Route::get('/portfolio', function () {
     return view('portfolio');
 });
 
+Route::get('/portfolio-single/{slug}', function () {
+    $lang = Session::get('lang', 'en');
+    app()->setLocale($lang);
+    return view('portfolio-single');
+});
+
 Route::get('/about-us', function () {
     $lang = Session::get('lang', 'en');
     app()->setLocale($lang);

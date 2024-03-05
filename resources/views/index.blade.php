@@ -4,38 +4,47 @@
 
 <!-- Content -->
 <div id="content">
+	<div class="carousel inner-controls" data-single-item="true" data-pagination="true" data-navigation="true" data-transition="fade">
 
-	<!-- Section -->
-	<section id="home" class="h-lg cover dark bg-black">
+		<!-- Section / Edge -->
+		<section class="section-image-edge dark cover pb-40">
 
-		<div class="carousel inner-controls" data-single-item="true" data-navigation="true" data-pagination="true" data-autoplay="5000">
-			<!-- Slide -->
-			<div class="slide h-lg">
-				<div class="bg-image"><img src="assets/img/photos/corporate_bg02.jpg" alt=""></div>
-				<div class="container v-center text-center">
-					<div class="row text-center">
-                        <div class="col-lg-8 col-md-8 col-lg-push-2">
-                            <h1 class="font-secondary">{{__('general.headline')}}</h1>
-                            <a href="#case-study" class="btn btn-primary animated fadeInUp visible" data-animation="fadeInUp">{{__('general.about us')}} <i class="i-after ti-arrow-down"></i></a>
-                        </div>
-                    </div>
+			<div class="bg-image"><img src="assets/img/photos/corporate_bg02.jpg" alt=""></div>
+
+			<div class="col-md-6 image zooming">
+				<img src="assets/img/devices/ipad_edge_2.png" alt="" class="mb-40 animated" data-animation="fadeInLeft">
+			</div>
+			<div class="container">
+				<div class="col-md-6 col-md-push-6 content">
+					<h1 class="mb-40">{{__('general.headline')}}</h1>
+                    <a href="/about-us" class="btn btn-default">{{__('general.about us')}} <i class="i-after ti-arrow-right"></i></a>
+
 				</div>
 			</div>
-			<!-- Slide -->
-			<div class="slide h-lg">
-				<div class="bg-image"><img src="assets/img/photos/finance_bg02.jpg" alt=""></div>
-				<div class="container v-center text-center">
-					<div class="row text-center">
-                        <div class="col-lg-8 col-lg-push-2">
-                            <h1 class="font-secondary">{{__('general.headline2')}}</h1>
-                            <a href="#case-study" class="btn btn-primary animated fadeInUp visible" data-animation="fadeInUp">{{__('general.contact us')}} <i class="i-after ti-arrow-down"></i></a>
-                        </div>
-                    </div>
+
+		</section>
+
+		<!-- Section / Edge -->
+		<section class="section-image-edge dark cover pb-40">
+
+			<div class="bg-image"><img src="assets/img/photos/finance_bg02.jpg" alt=""></div>
+
+			<div class="col-md-6 col-md-push-6 image right">
+				<img src="assets/img/devices/iphone_edge_2.png" alt="" class="mb-40 animated" data-animation="fadeInRight">
+			</div>
+			<div class="container">
+				<div class="col-md-6 content">
+					<h1 class="b-40">{{__('general.headline2')}}</h1>
+                    <a href="/contact" class="btn btn-default">{{__('general.contact us')}} <i class="i-after ti-arrow-right"></i></a>
 				</div>
 			</div>
-		</div>
 
-	</section>
+		</section>
+
+	</div>
+
+
+
 
 	<!-- Section-->
 	<section id="services" class="bg-primary dark">
@@ -150,22 +159,37 @@
 				<div class="col-lg-8 col-lg-push-2">
 					<h2 class="mb-40">{{__('general.Over 50 companies trust us')}}</h2>
 					<div class="row">
-						<div class="col-sm-4"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/sass.png" alt=""></a></div>
-						<div class="col-sm-4"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/envato.png" alt=""></a></div>
-						<div class="col-sm-4"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/suelo.png" alt=""></a></div>
-					</div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-01.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-02.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-03.png" alt=""></a></div>
+
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-02.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-05.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-06.png" alt=""></a></div>
+
+
+                        <div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-07.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-08.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-09.png" alt=""></a></div>
+
+                        <div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-10.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-11.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-12.png" alt=""></a></div>
+
+                    </div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-    <section class="section h-md bg-dark dark">
 
-		<div class="bg-image" style="background-image: url(&quot;assets/img/photos/corporate_bg03.jpg&quot;);"><img src="assets/img/photos/corporate_bg03.jpg" alt="" style="display: none;"></div>
+    <section id="video" class="section bg-dark cover dark">
 
-		<div class="v-center text-center">
-			<a href="#" class="btn-play btn-lg mb-30" data-toggle="modal" data-target="#modalVideo"></a>
-			<h1 class="animated fadeInUp visible" data-animation="fadeInUp">Look how do we work!</h1>
+        <div class="bg-image" style="background-image: url(&quot;assets/img/photos/corporate_bg03.jpg&quot;);"><img src="assets/img/photos/corporate_bg03.jpg" alt="" style="display: none;"></div>
+
+		<div class="video-box placeholder-image playing">
+			<div class="image"><iframe src="assets/img/videoo.mp4" autoplay="1" style="width: 1519px; height: 570px;"></iframe></div>
+			<a href="https://www.youtube.com/embed/uVju5--RqtY?rel=0&amp;autoplay=1" class="btn-play btn-lg"></a>
 		</div>
 
 	</section>
@@ -183,42 +207,49 @@
 
 		 	<div id="works-list" class="masonry row" style="position: relative; height: 856.463px;">
 				<div class="masonry-sizer col-sm-6 col-xs-12"></div>
-				<div class="masonry-item webdesign col-sm-6 col-xs-12" style="position: absolute; left: 0%; top: 0px; display: none;">
-					<!-- Image -->
-					<div class="image-box image-hover text-center">
-						<div class="image">
-							<a href="assets/img/2.jpg" data-lightbox="gallery" data-title="Image Title"><img src="assets/img/2.jpg" alt=""></a>
-						</div>
-						<div class="title">
-							<a href="#">
-								<h5 class="mb-0">The Flower</h5>
-								<span class="text-muted">Webdesign</span>
-							</a>
-						</div>
-					</div>
-				</div>
+                    <div class="masonry-item webdesign col-sm-6 col-xs-12" style="position: absolute; left: 0%; top: 0px; display: none;" onclick="alert('sss')">
+                        <!-- Image -->
+                        <div class="image-box image-hover text-center">
+                                <div class="image">
+                                    <a href="/portfolio-single" data-title="Image Title"><img src="assets/img/2.jpg" alt=""></a>
+                                </div>
+
+                                <div class="title">
+                                    <a href="/portfolio-single">
+                                        <h5 class="mb-0">The Flower</h5>
+                                        <span class="text-muted">Webdesign</span>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+
 				<div class="masonry-item development col-sm-6 col-xs-12" style="left: 0%; top: 0px;">
 					<!-- Image -->
 					<div class="image-box image-hover text-center">
-						<div class="image">
-							<a href="assets/img/1.jpg" data-lightbox="gallery" data-title="Image Title"><img src="assets/img/1.jpg" alt=""></a>
-						</div>
+
+                            <div class="image">
+                                <a href="/portfolio-single"  data-title="Image Title"><img src="assets/img/1.jpg" alt=""></a>
+                            </div>
+
 						<div class="title">
-							<a href="#">
+							<a href="/portfolio-single">
 								<h5 class="mb-0">The Bridge</h5>
 								<span class="text-muted">Webdesign</span>
 							</a>
 						</div>
 					</div>
 				</div>
+
 				<div class="masonry-item webdesign col-sm-6 col-xs-12" style="position: absolute; display: none;">
 					<!-- Image -->
 					<div class="image-box image-hover text-center">
+
 						<div class="image">
-							<a href="assets/img/3.jpg" data-lightbox="gallery" data-title="Image Title"><img src="assets/img/3.jpg" alt=""></a>
+							<a href="/portfolio-single" data-title="Image Title"><img src="assets/img/3.jpg" alt=""></a>
 						</div>
+
 						<div class="title">
-							<a href="#">
+							<a href="/portfolio-single">
 								<h5 class="mb-0">The Beach</h5>
 								<span class="text-muted">Webdesign</span>
 							</a>
@@ -228,11 +259,13 @@
 				<div class="masonry-item corporate-identity col-sm-6 col-xs-12" style="position: absolute; left: 50%; top: 856px; display: none;">
 					<!-- Image -->
 					<div class="image-box image-hover text-center">
+
 						<div class="image">
-							<a href="assets/img/4.jpg" data-lightbox="gallery" data-title="Image Title"><img src="assets/img/4.jpg" alt=""></a>
+							<a href="/portfolio-single" data-title="Image Title"><img src="assets/img/4.jpg" alt=""></a>
 						</div>
+
 						<div class="title">
-							<a href="#">
+							<a href="/portfolio-single">
 								<h5 class="mb-0">The Forest</h5>
 								<span class="text-muted">Webdesign</span>
 							</a>
@@ -242,11 +275,13 @@
 				<div class="masonry-item corporate-identity col-sm-6 col-xs-12" style="position: absolute; left: 0%; top: 1127px; display: none;">
 					<!-- Image -->
 					<div class="image-box image-hover text-center">
+
 						<div class="image">
-							<a href="assets/img/6.jpg" data-lightbox="gallery" data-title="Image Title"><img src="assets/img/6.jpg" alt=""></a>
+							<a href="/portfolio-single" data-title="Image Title"><img src="assets/img/6.jpg" alt=""></a>
 						</div>
+
 						<div class="title">
-							<a href="#">
+							<a href="portfolio-single">
 								<h5 class="mb-0">The Landscape</h5>
 								<span class="text-muted">Webdesign</span>
 							</a>
@@ -256,11 +291,12 @@
 				<div class="masonry-item development col-sm-6 col-xs-12" style="position: absolute; left: 50%; top: 0px;">
 					<!-- Image -->
 					<div class="image-box image-hover text-center">
+
 						<div class="image">
-							<a href="assets/img/works/5.jpg" data-lightbox="gallery" data-title="Image Title"><img src="assets/img/5.jpg" alt=""></a>
+							<a href="portfolio-single" data-title="Image Title"><img src="assets/img/5.jpg" alt=""></a>
 						</div>
 						<div class="title">
-							<a href="#">
+							<a href="portfolio-single">
 								<h5 class="mb-0">The Band</h5>
 								<span class="text-muted">Webdesign</span>
 							</a>
