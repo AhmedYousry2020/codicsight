@@ -58,11 +58,25 @@
 			<div class="row text-center">
 				<div class="col-lg-8 col-lg-push-2">
 					<h2 class="mb-40">أكثر من خمسون شركة كسبنا ثقتهم</h2>
-					<div class="row">
-						<div class="col-sm-4"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/sass.png" alt=""></a></div>
-						<div class="col-sm-4"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/envato.png" alt=""></a></div>
-						<div class="col-sm-4"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/suelo.png" alt=""></a></div>
-					</div>
+                    <div class="row">
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-01.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-02.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-03.png" alt=""></a></div>
+
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-02.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-05.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-06.png" alt=""></a></div>
+
+
+                        <div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-07.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-08.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-09.png" alt=""></a></div>
+
+                        <div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-10.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-11.png" alt=""></a></div>
+						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-12.png" alt=""></a></div>
+
+                    </div>
 				</div>
 			</div>
 		</div>

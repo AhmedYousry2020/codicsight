@@ -32,7 +32,7 @@ Route::get('/portfolio', function () {
     return view('portfolio');
 });
 
-Route::get('/portfolio-single/{slug}', function () {
+Route::get('/portfolio-single', function () {
     $lang = Session::get('lang', 'en');
     app()->setLocale($lang);
     return view('portfolio-single');
