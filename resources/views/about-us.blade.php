@@ -9,7 +9,7 @@
 	<div class="breadcrumb-wrapper border-top">
 		<div class="container">
 			<ol class="breadcrumb">
-				<li><a href="index.html">{{__('general.home')}}</a></li>
+				<li><a href="/">{{__('general.home')}}</a></li>
 				<li class="active">{{__('general.about us')}}</li>
 			</ol>
 		</div>
@@ -95,8 +95,8 @@
                             <img src="assets/img/logotypes/LOGOS-12.png">
                         </div>
                                           </div>
-                                   <button class="btn btn-primary leftLst" style="padding: 10px"><</button>
-                    <button class="btn btn-primary rightLst" style="padding: 10px">></button>
+                                          <button class="btn btn-primary leftLst" style="padding: 10px"><</button>
+                                          <button class="btn btn-primary rightLst" style="padding: 10px" >></button>
 
                 </div>
 
