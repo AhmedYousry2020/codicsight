@@ -187,7 +187,7 @@
 <div class="modal modal-video fade in" id="modalVideo" role="dialog" style="display: none;">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
-			<iframe width="595" height="339" src="assets/img/videoo.mp4" allowfullscreen=""></iframe>
+			<iframe width="595" height="339" src="assets/img/videoo.mp4" allowfullscreen="1" autoplay="1"></iframe>
 		</div>
 	</div>
 </div>
