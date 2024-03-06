@@ -55,7 +55,7 @@
 					<div class="feature feature-2 animated" data-animation="fadeInUp">
 						<span class="icon icon-sm"><i class="ti-pie-chart"></i></span>
 						<div class="feature-content">
-							<h5>{{__('general.Software Solutions')}}</h5>
+							<h4>{{__('general.Software Solutions')}}</h4>
 							<p>{{__('general.Software Solutions body')}} </p>
 						</div>
 					</div>
@@ -65,7 +65,7 @@
 					<div class="feature feature-2 animated" data-animation="fadeInUp" data-animation-delay="300">
 						<span class="icon icon-sm"><i class="ti-pulse"></i></span>
 						<div class="feature-content">
-							<h5>{{__('general.App Development')}}</h5>
+							<h4>{{__('general.App Development')}}</h4>
 							<p>{{__('general.App Development body')}}</p>
 						</div>
 					</div>
@@ -75,7 +75,7 @@
 					<div class="feature feature-2 animated" data-animation="fadeInUp" data-animation-delay="600">
 						<span class="icon icon-sm"><i class="ti-comments"></i></span>
 						<div class="feature-content">
-							<h5>{{__('general.UI/UX Design')}}</h5>
+							<h4>{{__('general.UI/UX Design')}}</h4>
 							<p>{{__('general.UI/UX Design body')}}</p>
 						</div>
 					</div>
@@ -190,9 +190,8 @@
                             <img src="assets/img/logotypes/LOGOS-12.png">
                         </div>
                                           </div>
-                                      <button class="btn btn-primary leftLst" style="padding: 10px"><</button>
-                    <button class="btn btn-primary rightLst" style="padding: 10px">></button>
-
+                    <button class="btn btn-primary leftLst" style="padding: 10px"><</button>
+                    <button class="btn btn-primary rightLst" style="padding: 10px" >></button>
                 </div>
 
             </div>
