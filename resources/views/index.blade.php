@@ -106,43 +106,37 @@
                 </div>
 			</div>
 
-
-            <div class="row v-center-items text-center">
-				<div class="col-lg-3 col-lg-push-1 col-md-4">
+            <div class="row">
+				<div class="col-md-4">
 					<!-- Icon Box -->
 					<div class="feature feature-1">
 						<span class="icon icon-circle icon-primary icon-sm"><i class="ti-bolt"></i></span>
 						<h4>{{__('general.Innovative Design')}}</h4>
 						<p class="mb-0">{{__('general.Innovative Design body')}}</p>
 					</div>
+                </div>
+                <div class="col-md-4">
 					<!-- Icon Box -->
 					<div class="feature feature-1">
 						<span class="icon icon-circle icon-primary icon-sm"><i class="ti-calendar"></i></span>
 						<h4>{{__('general.User-Centric Approach')}}</h4>
 						<p class="mb-0">{{__('general.User-Centric Approach body')}}</p>
 					</div>
-				</div>
-				<div class="col-lg-4 col-lg-push-1 col-md-4">
-					<img src="assets/img/about us.png" alt="" class="animated bounceInUp visible" data-animation="bounceInUp">
-				</div>
-				<div class="col-lg-3 col-lg-push-1 col-md-4">
-					<!-- Icon Box -->
-					<div class="feature feature-1">
-						<span class="icon icon-circle icon-primary icon-sm"><i class="ti-mobile"></i></span>
-						<h4>{{__('general.Innovative Design')}}</h4>
-						<p class="mb-0">{{__('general.Innovative Design body')}}</p>
-					</div>
-					<!-- Icon Box -->
-					<div class="feature feature-1">
+                </div>
+                <div class="col-md-4">
+                    <div class="feature feature-1">
 						<span class="icon icon-circle icon-primary icon-sm"><i class="ti-comments"></i></span>
 						<h4>{{__('general.Custom Development')}}</h4>
 						<p class="mb-0">{{__('general.Custom Development body')}}</p>
 					</div>
 				</div>
+            </div>
+
+
 			</div>
 			<div class="row pt-30">
 				<div class="col-md-4 col-md-push-4 col-sm-6 col-sm-push-3">
-					<a href="#" class="btn btn-primary btn-block">{{__('general.portfolio')}}<i class="i-after ti-arrow-down"></i></a>
+					<a href="/portfolio" class="btn btn-primary btn-block">{{__('general.portfolio')}}<i class="i-after ti-arrow-down"></i></a>
 				</div>
 			</div>
 		</div>
@@ -153,34 +147,57 @@
 
     <!--about end -->
 
-    <section id="clients" class="bg-grey">
+   <!-- Section -->
+	<section id="clients" class="bg-grey">
 		<div class="container">
-			<div class="row text-center">
-				<div class="col-lg-8 col-lg-push-2">
-					<h2 class="mb-40">{{__('general.Over 50 companies trust us')}}</h2>
-					<div class="row">
-						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-01.png" alt=""></a></div>
-						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-02.png" alt=""></a></div>
-						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-03.png" alt=""></a></div>
+			<div class="row">
+                <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                    <div class="MultiCarousel-inner">
+                        <div class="item">
+                            <img src="assets/img/logotypes/LOGOS-01.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/logotypes/LOGOS-02.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/logotypes/LOGOS-03.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/logotypes/LOGOS-04.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/logotypes/LOGOS-05.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/logotypes/LOGOS-06.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/logotypes/LOGOS-07.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/logotypes/LOGOS-08.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/logotypes/LOGOS-09.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/logotypes/LOGOS-10.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/logotypes/LOGOS-11.png">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/logotypes/LOGOS-12.png">
+                        </div>
+                                          </div>
+                    <button class="btn btn-primary leftLst"><</button>
+                    <button class="btn btn-primary rightLst">></button>
+                </div>
 
-						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-02.png" alt=""></a></div>
-						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-05.png" alt=""></a></div>
-						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-06.png" alt=""></a></div>
-
-
-                        <div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-07.png" alt=""></a></div>
-						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-08.png" alt=""></a></div>
-						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-09.png" alt=""></a></div>
-
-                        <div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-10.png" alt=""></a></div>
-						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-11.png" alt=""></a></div>
-						<div class="col-sm-2"><a href="#"><img class="gray-to-color" src="assets/img/logotypes/LOGOS-12.png" alt=""></a></div>
-
-                    </div>
-				</div>
-			</div>
+            </div>
 		</div>
 	</section>
+
 
 
     <section id="video" class="section bg-dark cover dark">

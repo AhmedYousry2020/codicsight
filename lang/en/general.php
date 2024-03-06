@@ -94,9 +94,9 @@ return [
     of our national institutions according to the best standards and global
     systems to advance the Saudi national economy and consolidate the
     principles of advancing the national economy",
-    "Our Vision"=>"Our Vision",
+    "Our vision"=>"Our Vision",
 
-    "Our Vision Body"=>"To be one of the leading consulting companies
+    "Our vision body"=>"To be one of the leading consulting companies
         that provide advanced practical solutions and
         build strategic partnerships with all
         organizations.",
@@ -110,15 +110,18 @@ return [
     paths with everything we offer with perfect
     planning and impressive implementation.
     organizations",
-    "Our Mission"=>"Our Mission",
-
-    "Our Mission Body"=>"To provide a successful and advanced partnership
+    "Our mission"=>"Our Mission",
+    "Our story"=>"Our Story",
+    "Our mission body"=>"To provide a successful and advanced partnership
         that meets the needs of the largest number of
         local and global establishments.",
+    "Our story body"=>"Our company was founded by a group of inspired people, passionate about technology and creativity. Our story began with a simple vision: make the web a better, more efficient place for everyone. Since then, we have elevated ourselves to become leaders in the field of website development and programming.
+    ",
+    "our story body 2"=>"Our journey was full of challenges and achievements. Through hard work and dedication, we have been able to gain valuable experience and continuously develop our skills. Each of our projects has been an opportunity to learn and grow, and to prove to our customers our ability to provide innovative and reliable technology solutions.
+    ",
+    "Our task"=>"Our Task",
 
-    "Our Task"=>"Our Task",
-
-    "Our Task Body"=>"To provide a portfolio of diverse consulting
+    "Our task Body"=>"To provide a portfolio of diverse consulting
         services and solutions for our clients.",
 
     "Our Values"=>"Our Values",
