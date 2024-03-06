@@ -15,7 +15,6 @@
 		</div>
 	</div>
 </div>
-
 <section>
     <div class="container">
 
@@ -28,42 +27,49 @@
 
          <div id="works-list" class="masonry row" style="position: relative; height: 856.463px;">
             <div class="masonry-sizer col-sm-6 col-xs-12"></div>
-            <div class="masonry-item webdesign col-sm-6 col-xs-12" style="position: absolute; left: 0%; top: 0px; display: none;">
-                <!-- Image -->
-                <div class="image-box image-hover text-center">
-                    <div class="image">
-                        <a href="assets/img/2.jpg" data-lightbox="gallery" data-title="Image Title"><img src="assets/img/2.jpg" alt=""></a>
-                    </div>
-                    <div class="title">
-                        <a href="#">
-                            <h5 class="mb-0">The Flower</h5>
-                            <span class="text-muted">Webdesign</span>
-                        </a>
-                    </div>
+                <div class="masonry-item webdesign col-sm-6 col-xs-12" style="position: absolute; left: 0%; top: 0px; display: none;" onclick="alert('sss')">
+                    <!-- Image -->
+                    <div class="image-box image-hover text-center">
+                            <div class="image">
+                                <a href="/portfolio-single" data-title="Image Title"><img src="assets/img/2.jpg" alt=""></a>
+                            </div>
+
+                            <div class="title">
+                                <a href="/portfolio-single">
+                                    <h5 class="mb-0">The Flower</h5>
+                                    <span class="text-muted">Webdesign</span>
+                                </a>
+                            </div>
+                        </div>
                 </div>
-            </div>
+
             <div class="masonry-item development col-sm-6 col-xs-12" style="left: 0%; top: 0px;">
                 <!-- Image -->
                 <div class="image-box image-hover text-center">
-                    <div class="image">
-                        <a href="assets/img/1.jpg" data-lightbox="gallery" data-title="Image Title"><img src="assets/img/1.jpg" alt=""></a>
-                    </div>
+
+                        <div class="image">
+                            <a href="/portfolio-single"  data-title="Image Title"><img src="assets/img/1.jpg" alt=""></a>
+                        </div>
+
                     <div class="title">
-                        <a href="#">
+                        <a href="/portfolio-single">
                             <h5 class="mb-0">The Bridge</h5>
                             <span class="text-muted">Webdesign</span>
                         </a>
                     </div>
                 </div>
             </div>
+
             <div class="masonry-item webdesign col-sm-6 col-xs-12" style="position: absolute; display: none;">
                 <!-- Image -->
                 <div class="image-box image-hover text-center">
+
                     <div class="image">
-                        <a href="assets/img/3.jpg" data-lightbox="gallery" data-title="Image Title"><img src="assets/img/3.jpg" alt=""></a>
+                        <a href="/portfolio-single" data-title="Image Title"><img src="assets/img/3.jpg" alt=""></a>
                     </div>
+
                     <div class="title">
-                        <a href="#">
+                        <a href="/portfolio-single">
                             <h5 class="mb-0">The Beach</h5>
                             <span class="text-muted">Webdesign</span>
                         </a>
@@ -73,11 +79,13 @@
             <div class="masonry-item corporate-identity col-sm-6 col-xs-12" style="position: absolute; left: 50%; top: 856px; display: none;">
                 <!-- Image -->
                 <div class="image-box image-hover text-center">
+
                     <div class="image">
-                        <a href="assets/img/4.jpg" data-lightbox="gallery" data-title="Image Title"><img src="assets/img/4.jpg" alt=""></a>
+                        <a href="/portfolio-single" data-title="Image Title"><img src="assets/img/4.jpg" alt=""></a>
                     </div>
+
                     <div class="title">
-                        <a href="#">
+                        <a href="/portfolio-single">
                             <h5 class="mb-0">The Forest</h5>
                             <span class="text-muted">Webdesign</span>
                         </a>
@@ -87,11 +95,13 @@
             <div class="masonry-item corporate-identity col-sm-6 col-xs-12" style="position: absolute; left: 0%; top: 1127px; display: none;">
                 <!-- Image -->
                 <div class="image-box image-hover text-center">
+
                     <div class="image">
-                        <a href="assets/img/6.jpg" data-lightbox="gallery" data-title="Image Title"><img src="assets/img/6.jpg" alt=""></a>
+                        <a href="/portfolio-single" data-title="Image Title"><img src="assets/img/6.jpg" alt=""></a>
                     </div>
+
                     <div class="title">
-                        <a href="#">
+                        <a href="portfolio-single">
                             <h5 class="mb-0">The Landscape</h5>
                             <span class="text-muted">Webdesign</span>
                         </a>
@@ -101,11 +111,12 @@
             <div class="masonry-item development col-sm-6 col-xs-12" style="position: absolute; left: 50%; top: 0px;">
                 <!-- Image -->
                 <div class="image-box image-hover text-center">
+
                     <div class="image">
-                        <a href="assets/img/works/5.jpg" data-lightbox="gallery" data-title="Image Title"><img src="assets/img/5.jpg" alt=""></a>
+                        <a href="portfolio-single" data-title="Image Title"><img src="assets/img/5.jpg" alt=""></a>
                     </div>
                     <div class="title">
-                        <a href="#">
+                        <a href="portfolio-single">
                             <h5 class="mb-0">The Band</h5>
                             <span class="text-muted">Webdesign</span>
                         </a>
