@@ -9,7 +9,7 @@
 	<div class="breadcrumb-wrapper border-top">
 		<div class="container">
 			<ol class="breadcrumb">
-				<li><a href="index.html">{{__('general.home')}}</a></li>
+				<li><a href="/">{{__('general.home')}}</a></li>
 				<li class="active">{{__('general.portfolio')}}</li>
 			</ol>
 		</div>
