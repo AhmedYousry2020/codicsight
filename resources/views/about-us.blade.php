@@ -95,8 +95,9 @@
                             <img src="assets/img/logotypes/LOGOS-12.png">
                         </div>
                                           </div>
-                    <button class="btn btn-primary leftLst"><</button>
-                    <button class="btn btn-primary rightLst">></button>
+                                   <button class="btn btn-primary leftLst" style="padding: 10px"><</button>
+                    <button class="btn btn-primary rightLst" style="padding: 10px">></button>
+
                 </div>
 
             </div>
