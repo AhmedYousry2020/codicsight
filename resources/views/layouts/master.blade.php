@@ -142,7 +142,7 @@
     <div class="container">
         <div class="row mb-80">
             <div class="col-md-4 footer-logo">
-                <img src="{{asset('assets/img/codic Logo-01.png')}}" class="img-circle mb-30" alt="">
+                <img src="{{asset('assets/img/codic-Logo-01.png')}}" class="img-circle mb-30" alt="">
                 <address class="mb-60">
                     <strong>{{__('general.address')}}</strong><br>
                     {{__('general.Riyadh')}}
