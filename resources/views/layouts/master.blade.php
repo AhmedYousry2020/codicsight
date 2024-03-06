@@ -25,7 +25,16 @@
 
 <!-- Google Web Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<style>
+    .bs-example {
+        margin: 20px;
+    }
 
+    .modal-content iframe {
+        margin: 0 auto;
+        display: block;
+    }
+</style>
 @include('layouts.styles')
 </head>
 
@@ -175,7 +184,13 @@
 <a id="back-to-top" href="#" class="btn btn-default btn-filled" style="display: inline">
     WhatsAPP<i class="fa fa-whatsapp" style="padding: 2px"></i>
 </a>
-
+<div class="modal modal-video fade in" id="modalVideo" role="dialog" style="display: none;">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<iframe width="595" height="339" src="assets/img/videoo.mp4" allowfullscreen=""></iframe>
+		</div>
+	</div>
+</div>
 @include('layouts.scripts')
 
 </body>
