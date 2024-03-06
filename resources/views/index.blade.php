@@ -200,17 +200,14 @@
 
 
 
-    <section id="video" class="section bg-dark cover dark">
 
-        <div class="bg-image" style="background-image: url(&quot;assets/img/photos/corporate_bg03.jpg&quot;);"><img src="assets/img/photos/corporate_bg03.jpg" alt="" style="display: none;"></div>
-
-		<div class="video-box placeholder-image playing">
-			<div class="image"><iframe src="assets/img/videoo.mp4" autoplay="1" style="width: 1519px; height: 570px;"></iframe></div>
-			<a href="https://www.youtube.com/embed/uVju5--RqtY?rel=0&amp;autoplay=1" class="btn-play btn-lg"></a>
+    <section class="section h-md bg-dark dark">
+		<div class="bg-image" style="background-image: url(&quot;assets/img/photos/corporate_bg03.jpg&quot;);"><img src="assets/img/photos/corporate_bg03.jpg" alt="" style="display: none;"></div>
+		<div class="v-center text-center">
+			<a href="#" class="btn-play btn-lg mb-30" data-toggle="modal" data-target="#modalVideo"></a>
+			<h1 class="animated fadeInUp visible" data-animation="fadeInUp">Look how do we work!</h1>
 		</div>
-
 	</section>
-
 
     <section>
 		<div class="container">
