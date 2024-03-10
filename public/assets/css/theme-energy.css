@@ -20,7 +20,8 @@ Table of Contents:
 /* ----------------------------------------------------------------------------- */
 /* --- 1. SETUP
 /* ----------------------------------------------------------------------------- */
-body { position: relative; color: #434343; font-size: 13px; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 400; line-height: 1.5; overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { position: relative; color: #434343; font-size: 13px; font-family: "Rubik", sans-serif; font-weight: 400; line-height: 1.5; overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
 
 a { color: inherit; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
@@ -2469,7 +2470,7 @@ h6, h6 { font-size: 13px; font-family: "Montserrat", Helvetica, Arial, sans-seri
   h2 { font-size: 34px; } }
 @media only screen and (max-width: 991px) { h1.text-xl { font-size: 60px; } }
 /* Paragraph */
-p { font-size: 15px; font-weight: 400; margin-bottom: 25px; font-family: sans-serif; }
+p { font-size: 15px; font-weight: 400; margin-bottom: 25px; font-family: "Rubik", sans-serif;}
 
 p.lead { font-size: 16px; margin-bottom: 25px; font-weight:400; font-family: sans-serif; }
 p.lead.text-lg { font-size: 24px; margin-bottom: 35px; }
@@ -2676,3 +2677,27 @@ html[dir="rtl"] .widget .twitter-feed ul li:before { right: -21px; left: auto; }
 @keyframes blinking { 0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; } }
+
+
+  p{
+    font-family: "Rubik", sans-serif;
+}
+
+h1{
+    font-family: "Rubik", sans-serif;
+}
+h2{
+    font-family: "Rubik", sans-serif;
+}
+h3{
+    font-family: "Rubik", sans-serif;
+}
+h4{
+    font-family: "Rubik", sans-serif;
+}
+h5{
+    font-family: "Rubik", sans-serif;
+}
+h6{
+    font-family: "Rubik", sans-serif;
+}
