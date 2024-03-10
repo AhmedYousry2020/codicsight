@@ -23,8 +23,11 @@
 <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon_120x120.png">
 <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon_152x152.png">
 
+
 <!-- Google Web Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 <style>
     .bs-example {
         margin: 20px;
