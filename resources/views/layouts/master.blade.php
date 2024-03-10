@@ -14,7 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!-- Title -->
-<title>Okno - Ultimate Multi-Purpose HTML5 Template</title>
+<title>codicsight</title>
 
 <!-- Favicons -->
 <link rel="shortcut icon" href="assets/img/favicon.png">
@@ -39,6 +39,8 @@
     }
 </style>
 @include('layouts.styles')
+<link href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" rel="stylesheet">
+
 </head>
 
 <body class="one-page">
@@ -108,9 +110,9 @@
 
 			<!-- Icons -->
 			<div class="module icons left">
-				<a href="#" class="icon icon-facebook icon-xs"><i class="fa fa-facebook"></i></a>
-				<a href="#" class="icon icon-twitter icon-xs"><i class="fa fa-twitter"></i></a>
-				<a href="#" class="icon icon-google-plus icon-xs"><i class="fa fa-google-plus"></i></a>
+				<a href="#" class="icon icon-linkedin icon-xs"><i class="fa-brands fa-linkedin"></i></a>
+				<a href="#" class="icon icon-pinterest icon-xs"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#" class="icon icon-dark icon-xs"><i class="fa-brands fa-tiktok"></i></a>
 			</div>
 
 		</nav>
@@ -173,8 +175,11 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-6">
                             <button class="btn btn-filled btn-primary btn-block">{{__('general.SEND MESSAGE')}}<i class="i-after ti-arrow-right"></i></button>
+
                         </div>
+
                     </div>
+
                 </form>
             </div>
         </div>
@@ -185,7 +190,8 @@
 <!-- Footer / End -->
 
 <a id="back-to-top" href="#" class="btn btn-default btn-filled" style="display: inline">
-    WhatsAPP<i class="fa fa-whatsapp" style="padding: 2px"></i>
+    <i class="fa-brands fa-whatsapp" style="padding: 2px"></i>
+
 </a>
 <div class="modal modal-video fade in" id="modalVideo" role="dialog" style="display: none;">
 	<div class="modal-dialog" role="document">

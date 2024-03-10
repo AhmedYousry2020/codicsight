@@ -52,57 +52,33 @@
 
 
 
-	<!-- Section -->
-	<section id="clients" class="bg-grey">
+	 <!-- Section -->
+     <section id="clients" class="bg-grey">
 		<div class="container">
-			<div class="row">
-                <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
-                    <div class="MultiCarousel-inner">
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-01.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-02.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-03.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-04.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-05.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-06.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-07.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-08.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-09.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-10.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-11.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-12.png">
-                        </div>
-                                          </div>
-                                          <button class="btn btn-primary leftLst" style="padding: 10px"><</button>
-                                          <button class="btn btn-primary rightLst" style="padding: 10px" >></button>
+            <div class="row text-center">
+				<div class="col-lg-8 col-lg-push-2">
+                    <h3 class="mb-40">{{__('general.Our Clients')}}</h3>
+					<div class="carousel" data-single-item="true" data-autoplay="800" data-transition="fade">
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-01.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-02.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-03.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-04.png" alt=""></a>
+
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-05.png" alt=""></a>
+
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-06.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-07.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-08.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-09.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-10.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-11.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-12.png" alt=""></a>
+                    </div>
 
                 </div>
 
             </div>
 		</div>
 	</section>
-
 </div>
 @endsection

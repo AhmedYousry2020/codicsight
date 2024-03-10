@@ -7,6 +7,7 @@
 
 <!-- JS Core -->
 <script src="{{asset('assets/js/core.js')}}"></script>
+<script src="{{asset('assets/js/owl-carousel.js')}}"></script>
 
 <script>
     function showdSingleDetails(e){

@@ -31,7 +31,7 @@
 	<section class="section-double right">
 
 		<div class="col-md-6 content">
-			<h2>{{__('general.Software Solutions')}}</h2>
+			<h4>{{__('general.Software Solutions')}}</h4>
 							<p class="mb-0">{{__('general.Software Solutions body')}}</p>
 		</div>
 		<div class="col-md-6 image">
@@ -44,7 +44,7 @@
 	<section class="section-double left">
 
 		<div class="col-md-6 content">
-			<h2>{{__('general.App Development')}}</h2>
+			<h4>{{__('general.App Development')}}</h4>
 							<p class="mb-0">{{__('general.App Development body')}}</p>
 		</div>
 		<div class="col-md-6 image">
@@ -57,7 +57,7 @@
 	<section class="section-double right">
 
 		<div class="col-md-6 content">
-            <h2>{{__('general.UI/UX Design')}}</h2>
+            <h4>{{__('general.UI/UX Design')}}</h4>
             <p class="mb-0">{{__('general.UI/UX Design body')}}</p>
 		</div>
 		<div class="col-md-6 image">
@@ -69,7 +69,7 @@
 	<section class="section-double left">
 
 		<div class="col-md-6 content">
-            <h2>{{__('general.Web Development')}}</h2>
+            <h4>{{__('general.Web Development')}}</h4>
 							<p class="mb-0">{{__('general.Web Development body')}}</p>
 		</div>
 		<div class="col-md-6 image">
@@ -80,7 +80,7 @@
 
     <section>
 		<div class="container text-center">
-			<h2 class="mb-70">{{__('general.How do we work?')}}</h2>
+			<h4 class="mb-70">{{__('general.How do we work?')}}</h4>
 			<div class="row workflow-steps">
 				<span class="workflow-progress animated visible"></span>
 				<!-- Step -->

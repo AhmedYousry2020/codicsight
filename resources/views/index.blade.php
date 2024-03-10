@@ -55,7 +55,7 @@
 					<div class="feature feature-2 animated" data-animation="fadeInUp">
 						<span class="icon icon-sm"><i class="ti-pie-chart"></i></span>
 						<div class="feature-content">
-							<h4>{{__('general.Software Solutions')}}</h4>
+							<h5>{{__('general.Software Solutions')}}</h5>
 							<p>{{__('general.Software Solutions body')}} </p>
 						</div>
 					</div>
@@ -65,7 +65,7 @@
 					<div class="feature feature-2 animated" data-animation="fadeInUp" data-animation-delay="300">
 						<span class="icon icon-sm"><i class="ti-pulse"></i></span>
 						<div class="feature-content">
-							<h4>{{__('general.App Development')}}</h4>
+							<h5>{{__('general.App Development')}}</h5>
 							<p>{{__('general.App Development body')}}</p>
 						</div>
 					</div>
@@ -75,7 +75,7 @@
 					<div class="feature feature-2 animated" data-animation="fadeInUp" data-animation-delay="600">
 						<span class="icon icon-sm"><i class="ti-comments"></i></span>
 						<div class="feature-content">
-							<h4>{{__('general.UI/UX Design')}}</h4>
+							<h5>{{__('general.UI/UX Design')}}</h5>
 							<p>{{__('general.UI/UX Design body')}}</p>
 						</div>
 					</div>
@@ -85,7 +85,7 @@
 					<div class="feature feature-2 animated" data-animation="fadeInUp" data-animation-delay="600">
 						<span class="icon icon-sm"><i class="ti-comments"></i></span>
 						<div class="feature-content">
-							<h4>{{__('general.Web Development')}}</h4>
+							<h5>{{__('general.Web Development')}}</h5>
 							<p>{{__('general.Web Development body')}}</p>
 						</div>
 					</div>
@@ -150,48 +150,26 @@
    <!-- Section -->
 	<section id="clients" class="bg-grey">
 		<div class="container">
-			<div class="row">
-                <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
-                    <div class="MultiCarousel-inner">
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-01.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-02.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-03.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-04.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-05.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-06.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-07.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-08.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-09.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-10.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-11.png">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/logotypes/LOGOS-12.png">
-                        </div>
-                                          </div>
-                    <button class="btn btn-primary leftLst" style="padding: 10px"><</button>
-                    <button class="btn btn-primary rightLst" style="padding: 10px" >></button>
+            <div class="row text-center">
+				<div class="col-lg-8 col-lg-push-2">
+                    <h3 class="mb-40">{{__('general.Our Clients')}}</h3>
+					<div class="carousel" data-single-item="true" data-autoplay="800" data-transition="fade">
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-01.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-02.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-03.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-04.png" alt=""></a>
+
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-05.png" alt=""></a>
+
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-06.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-07.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-08.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-09.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-10.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-11.png" alt=""></a>
+						<a href="#"><img class="gray-to-color mb-50" src="assets/img/logotypes/LOGOS-12.png" alt=""></a>
+                    </div>
+
                 </div>
 
             </div>
@@ -326,7 +304,7 @@
 <section id="services" class="bg-grey">
 
     <div class="container text-center">
-        <h2 class="mb-70">{{__('general.Work Process')}}</h2>
+        <h1 class="mb-70">{{__('general.Work Process')}}</h1>
         <div class="row mb-80">
             <!-- Feature -->
             <div class="col-md-4">
@@ -371,8 +349,11 @@
                 </div>
             </div>
         </div>
-        <h4>{{__('general.Build your digital world in the new virtual reality')}}</h4>
-        <span data-target="local-scroll"><a href="#contact" class="btn btn-filled btn-primary"><i class="i-before ti-email"></i>{{__('general.contact us')}}</a></span>
+        <div class="row pt-30">
+            <div class="col-md-4 col-md-push-4 col-sm-6 col-sm-push-3">
+                <a href="/contact" class="btn btn-primary btn-block"><i class="i-before ti-email"></i>{{__('general.contact us')}}</a></a>
+            </div>
+        </div>
     </div>
 
 </section>
