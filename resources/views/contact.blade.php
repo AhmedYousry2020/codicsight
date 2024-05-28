@@ -1,215 +1,167 @@
 @extends('layouts.master')
 @section('content')
-        <!-- PAGE TITLE -->
-        <div class="page-title-cont page-title-big grey-light-bg">
-          <div class="relative container align-left">
-            <div class="row">
+        <!-- content -->
+        <div class="mil-content">
+            <div id="swupMain" class="mil-main-transition">
 
-              <div class="col-md-8">
-                <h1 class="page-title">CONTACT</h1>
-                <div class="page-sub-title">
-                  Lorem ipsum dolor sit amet, consectetur elit
-                </div>
-              </div>
+                <!-- banner -->
+                <div class="mil-inner-banner mil-p-0-120">
+                    <div class="mil-banner-content mil-center mil-up">
+                        <div class="container">
+                            <ul class="mil-breadcrumbs mil-center mil-mb-60">
+                                <li><a href="/">Homepage</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                            <h1 class="mil-mb-60">{{__('general.Get in touch!')}}</h1>
 
-              <div class="col-md-4">
-                <div class="breadcrumbs">
-                  <a href="./index.php">Home</a><span class="slash-divider">/</span><span class="bread-current">CONTACT</span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-          <!-- GOOGLE MAP & CONTACT FORM -->
-          <div class="page-section">
-            <div class="container-fluid">
-              <div class="row">
-
-                <div class="col-md-6">
-                  <div class="row">
-                    <!-- <div data-address="580 California Street, San Francisco, CA" id="google-map"></div> -->
-
-                <!-- *This is an example of using latitude and longitude if you need to use them instead of an address. Read more in the documentation.* -->
-                <div data-latitude="37.792888" data-longitude="-122.404041" id="google-map"></div>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="contact-form-cont">
-                    <!-- TITLE -->
-                    <div class="mb-40">
-                      <h2 class="section-title">CONTACT <span class="bold">US</span></h2>
-                    </div>
-
-                    <!-- CONTACT FORM -->
-                    <div>
-                      <form id="contact-form" action="php/contact-form.php" method="POST">
-
-                        <div class="row">
-                          <div class="col-md-12 mb-30">
-                            <!-- <label>Your name *</label> -->
-                            <input type="text" value="" data-msg-required="Please enter your name" maxlength="100" class="controled" name="name" id="name" placeholder="NAME" required>
-                          </div>
                         </div>
+                    </div>
+                </div>
+                <!-- banner end -->
 
-                        <div class="row">
-                          <div class="col-md-12 mb-30">
-                            <!-- <label>Your email address *</label> -->
-                            <input type="email" value="" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address" maxlength="100" class="controled" name="email" id="email" placeholder="EMAIL" required>
+
+
+                <!-- contact form -->
+                <section id="contact">
+                    <div class="container mil-p-120-90">
+                        <h3 class="mil-center mil-up mil-mb-120">Let's <span class="mil-thin">Talk</span></h3>
+                        <form class="row align-items-center">
+                            <div class="col-lg-6 mil-up">
+                                <input type="text" placeholder="{{__('general.Your name')}}">
                             </div>
+                            <div class="col-lg-6 mil-up">
+                                <input type="email" placeholder="{{__('general.Your email')}}">
+                            </div>
+                            <div class="col-lg-12 mil-up">
+                                <textarea placeholder="{{__('general.Your message')}}"></textarea>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="mil-up mil-mb-30"><span class="mil-accent">*</span> </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mil-adaptive-right mil-up mil-mb-30">
+                                    <button type="submit" class="mil-button mil-arrow-place">
+                                        <span>{{__('general.SEND MESSAGE')}}</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <!-- contact form end -->
+
+                <!-- footer -->
+                @include('layouts.footer')
+                <!-- footer end -->
+
+                <!-- hidden elements -->
+                <div class="mil-hidden-elements">
+                    <div class="mil-dodecahedron">
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-
-                        <div class="row">
-                          <div class="col-md-12 mb-40">
-                            <!-- <label>Message *</label> -->
-                            <textarea maxlength="5000" data-msg-required="Please enter your message" rows="3" class="controled" name="message" id="message" placeholder="MESSAGE" required></textarea>
-                          </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-
-                        <div class="row">
-                          <div class="col-md-12 text-center-xxs">
-                            <input type="submit" value="SEND MESSAGE" class="button medium gray" data-loading-text="Loading...">
-                          </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-
-                      </form>
-                      <div class="alert alert-success hidden animated fadeIn" id="contactSuccess" >
-                        Thanks, your message has been sent to us.
-                      </div>
-
-                      <div class="alert alert-danger hidden animated shake" id="contactError">
-                        <strong>Error!</strong> There was an error sending your message.
-                      </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
-                  </div>
-                </div>
 
-              </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
+                        <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z" />
+                    </svg>
+
+                    <svg width="250" viewBox="0 0 300 1404" fill="none" xmlns="http://www.w3.org/2000/svg" class="mil-lines">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 -4.37115e-08L150 1404L149 1404L149 0L150 -4.37115e-08Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" class="mil-move" />
+                    </svg>
+                </div>
+                <!-- hidden elements end -->
+
             </div>
-          </div>
-
-          <!-- DIVIDER -->
-          <hr class="mt-0 mb-0">
-
-          <!-- CONTACT INFO SECTION 1 -->
-          <div id="contact-link" class="page-section p-110-cont grey-light-bg">
-            <div class="container">
-              <div class="row">
-
-                <div class="col-md-4 col-sm-6">
-                  <div class="cis-cont">
-                    <div class="cis-icon">
-                      <div class="icon icon-basic-map"></div>
-                    </div>
-                    <div class="cis-text">
-                      <h3><span class="bold">ADDRESS</span></h3>
-                      <p>790 FOLSOM AVE, SAN FRANCISCO</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                  <div class="cis-cont">
-                    <div class="cis-icon">
-                      <div class="icon icon-basic-mail"></div>
-                    </div>
-                    <div class="cis-text">
-                      <h3><span class="bold">EMAIL</span></h3>
-                      <p><a href="mailto:info@haswell.com">INFO@HASWELL.COM</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                  <div class="cis-cont">
-                    <div class="cis-icon">
-                      <div class="icon icon-basic-smartphone"></div>
-                    </div>
-                    <div class="cis-text">
-                      <h3><span class="bold">CALL US</span></h3>
-                      <p>1-800-312-212, 1-800-311-101</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- CLIENTS 1 & TESTIMONIALS 1 -->
-          <div id="clients-link" class="page-section p-110-cont">
-            <div class="container">
-              <div class="row">
-                <!-- CLIENTS 1 -->
-                <div class="col-md-7">
-                  <div class="row client-row border-bot">
-
-                      <div class="col-xs-6 col-sm-3 text-center">
-                        <img alt="client" src="{{asset('assets/images/clients/1.png')}}">
-                      </div>
-
-                      <div class="col-xs-6 col-sm-3 text-center">
-                        <img alt="client" src="{{asset('assets/images/clients/2.png')}}">
-                      </div>
-
-                      <div class="col-xs-6 col-sm-3 text-center">
-                        <img alt="client" src="{{asset('assets/images/clients/3.png')}}">
-                      </div>
-
-                      <div class="col-xs-6 col-sm-3 text-center">
-                        <img alt="client" src="{{asset('assets/images/clients/4.png')}}">
-                      </div>
-
-                  </div>
-
-                  <div class="row client-row">
-
-                      <div class="col-xs-6 col-sm-3 text-center">
-                        <img alt="client" src="{{asset('assets/images/clients/5.png')}}">
-                      </div>
-
-                      <div class="col-xs-6 col-sm-3 text-center">
-                        <img alt="client" src="{{asset('assets/images/clients/6.png')}}">
-                      </div>
-
-                      <div class="col-xs-6 col-sm-3 text-center">
-                        <img alt="client" src="{{asset('assets/images/clients/7.png')}}">
-                      </div>
-
-                      <div class="col-xs-6 col-sm-3 text-center">
-                        <img alt="client" src="{{asset('assets/images/clients/8.png')}}">
-                      </div>
-
-                  </div>
-
-                </div>
-                <!-- TESTIMONIALS 1 -->
-                <div class="col-md-5">
-                  <blockquote class="quote mb-0 pl-50-min-1169">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, maiores esse temporibus accusantium quas soluta quis sed rerum.</p>
-                    <footer>John Doe, Google Inc.</footer>
-                   </blockquote>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-        <!-- NEWS LETTER -->
-        <div class="page-section nl-cont">
-          <div class="container">
-            <div class="relative" >
-              <div id="mc_embed_signup" class="nl-form-container clearfix">
-                <form action="http://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform validate" target="_blank" novalidate>   <!-- EDIT THIS ACTION URL (add "post-json?u" instead of "post?u" and appended "&amp;c=?" to the end of this URL) -->
-                  <input type="email" value="" name="EMAIL" class="email nl-email-input" id="mce-EMAIL" placeholder="Enter your email" required>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;"><input type="text" name="b_ba37086d08bdc9f56f3592af0_e38247f7cc" tabindex="-1" value=""></div>
-
-                  <input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button medium gray">
-                </form>
-                <div id="notification_container"  ></div>
-              </div>
-            </div>
-          </div>
         </div>
-@endsection
+        <!-- content -->
+
+        @endsection

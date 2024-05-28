@@ -1,206 +1,239 @@
 <!DOCTYPE html>
-@if (app()->getLocale() == 'ar')
-<html lang="ar" data-cookies-popup="true" dir="rtl">
 
-@elseif(app()->getLocale() == 'en')
 <html lang="en" data-cookies-popup="true">
-
-@endif
 
 <head>
 
-<!-- Meta -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<!-- Title -->
-<title>codicsight</title>
+    <!-- bootstrap grid css -->
+    <link rel="stylesheet" href="{{asset('assets/css/plugins/bootstrap-grid.css')}}">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="{{asset('assets/css/plugins/font-awesome.min.css')}}">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="{{asset('assets/css/plugins/swiper.min.css')}}">
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="{{asset('assets/css/plugins/fancybox.min.css')}}">
+    @if (app()->getLocale() == 'ar')
+    <!-- ashley scss -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Noto+Sans+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-<!-- Favicons -->
-<link rel="shortcut icon" href="assets/img/favicon.png">
-<link rel="apple-touch-icon" href="assets/img/favicon_60x60.png">
-<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon_76x76.png">
-<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon_120x120.png">
-<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon_152x152.png">
+    <link rel="stylesheet" href="{{asset('assets/css/style-rtl.css')}}">
+    @endif
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 
-
-<!-- Google Web Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-<style>
-    .bs-example {
-        margin: 20px;
-    }
-
-    .modal-content iframe {
-        margin: 0 auto;
-        display: block;
-    }
-</style>
-@include('layouts.styles')
-<link href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" rel="stylesheet">
+    <!-- page name -->
+    <title>codicsight</title>
 
 </head>
 
-<body class="one-page">
+<body>
 
+    <!-- wrapper -->
+    <div class="mil-wrapper" id="top">
 
-<!-- Loader -->
-<div id="page-loader"><svg class="loader-1 loader-primary" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="3" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div>
-<!-- Loader / End -->
+        <!-- cursor -->
+        <div class="mil-ball">
+            <span class="mil-icon-1">
+                <svg viewBox="0 0 128 128">
+                    <path d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2	c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2,1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2	L11.2,67h105.5l-14.9,14.9c-1.2,1.2-1.2,3.1,0,4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2L106.1,41.9	z" />
+                </svg>
+            </span>
+            <div class="mil-more-text">More</div>
+            <div class="mil-choose-text">Сhoose</div>
+        </div>
+        <!-- cursor end -->
 
-<!-- Header -->
-<header id="header" class="fullwidth light">
+        <!-- preloader -->
+        <div class="mil-preloader">
+            <div class="mil-preloader-animation">
+                <div class="mil-pos-abs mil-animation-1">
+                    <p class="mil-h3 mil-muted mil-thin">{{__('general.headline')}}</p>
 
-	<!-- Navigation Bar -->
-	<div id="nav-bar">
-
-		<!-- Logo -->
-		<a class="logo-wrapper" href="/">
-			<img class="logo logo-dark" src="{{asset('assets/img/LOGOS-06.png')}}" alt="Okno">
-		</a>
-
-		<nav class="module-group right">
-
-			<!-- Primary Menu -->
-			<div class="module menu left">
-				<ul id="nav-primary" class="nav nav-primary">
-                    <li>
-                        <a href="/">{{__('general.home')}}</a>
-
-                    </li>
-                    <li>
-                        <a href="/about-us">{{__('general.about us')}}</a>
-
-                    </li>
-                    <li>
-                        <a href="/services">{{__('general.services')}}</a>
-
-                    </li>
-                    <li>
-                        <a href="/portfolio">{{__('general.portfolio')}}</a>
-
-                    </li>
-                    <li class="has-dropdown lang">
-                        <a href="#">{{app()->getLocale() == 'en' ? __('general.English') : __('general.Arabic') }}</a>
-							<ul>
-								<li><a href="/change-language/en">{{__('general.English')}}</a></li>
-								<li><a href="/change-language/ar">{{__('general.Arabic')}}</a></li>
-
-							</ul>
-                    </li>
-                </ul>
-			</div>
-
-			<!-- Language Menu -->
-			<!-- Language Menu -->
-            <div class="module language left">
-                <ul class="nav nav-primary">
-                    <li class="has-dropdown">
-                        <a href="#">{{app()->getLocale() == 'en' ? __('general.English') : __('general.Arabic') }}</a>
-                        <ul>
-                            <li><a href="/change-language/en">{{__('general.English')}}</a></li>
-                            <li><a href="/change-language/ar">{{__('general.Arabic')}}</a></li>
-
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-			<!-- Icons -->
-			<div class="module icons left">
-				<a href="#" class="icon icon-linkedin icon-xs"><i class="fa-brands fa-linkedin"></i></a>
-				<a href="#" class="icon icon-pinterest icon-xs"><i class="fa-brands fa-instagram"></i></a>
-				<a href="#" class="icon icon-dark icon-xs"><i class="fa-brands fa-tiktok"></i></a>
-			</div>
-
-		</nav>
-
-		<!-- Menu Toggle -->
-		<div class="menu-toggle">
-			<a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a>
-		</div>
-
-	</div>
-
-	<!-- Notification Bar -->
-	<div id="notification-bar"></div>
-
-	<!-- Search Bar -->
-	<div id="search-bar">
-		<form id="search-form">
-			<input class="search-bar-input" type="text" placeholder="Search...">
-			<button class="search-bar-submit"><i class="ti-search"></i></button>
-		</form>
-		<a href="#" class="search-bar-close" data-toggle="search-bar"><i class="ti-close"></i></a>
-	</div>
-
-
-</header>
-<!-- Header / End -->
-@yield('content')
-
-<!-- Footer -->
-<section id="contact" class="bg-dark dark">
-
-    <div class="container">
-        <div class="row mb-80">
-            <div class="col-md-4 footer-logo">
-                <img src="{{asset('assets/img/codic-logo-01.png')}}" class="img-circle mb-30" alt="">
-                <address class="mb-60">
-                    <strong>{{__('general.address')}}</strong><br>
-                    {{__('general.Riyadh')}}
-                    <br><br>
-                    <strong>{{__('general.phone')}}</strong><br>
-                    0551418444<br><br>
-                    <strong>{{__('general.email')}}</strong><br>
-                    <a href="#">info@codicsight.com</a><br>
-                </address>
-            </div>
-            <div class="col-md-8">
-                <h5 class="mb-40">{{__('general.contact us')}}</h5>
-                <form class="contact-form validate-form" id="contact-form" novalidate="novalidate">
-                    <div class="row">
-                        <div class="form-group col-sm-6">
-                            <input name="name" id="name" type="text" class="form-control bordered" placeholder="Name" required="" aria-required="true" aria-invalid="true">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <input name="email" id="email" type="text" class="form-control bordered" placeholder="E-mail address" required="" aria-required="true" aria-invalid="true">
-                        </div>
+                </div>
+                <div class="mil-pos-abs mil-animation-2">
+                    <div class="mil-reveal-frame">
+                        <p class="mil-reveal-box"></p>
+                        <p class="mil-h3 mil-muted mil-thin">codicsight.com</p>
                     </div>
-                    <div class="form-group">
-                        <textarea name="message" id="message" cols="30" rows="7" class="form-control bordered" placeholder="Message" required="" aria-required="true" aria-invalid="true"></textarea>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6">
-                            <button class="btn btn-filled btn-primary btn-block">{{__('general.SEND MESSAGE')}}<i class="i-after ti-arrow-right"></i></button>
-
-                        </div>
-
-                    </div>
-
-                </form>
+                </div>
             </div>
         </div>
+        <!-- preloader end -->
+
+        <!-- scrollbar progress -->
+        <div class="mil-progress-track">
+            <div class="mil-progress"></div>
+        </div>
+        <!-- scrollbar progress end -->
+
+        <!-- menu -->
+        <div class="mil-menu-frame">
+            <!-- frame clone -->
+            <div class="mil-frame-top">
+                <a href="/" class="mil-logo">C.</a>
+                <div class="mil-menu-btn">
+                    <span></span>
+                </div>
+            </div>
+            <!-- frame clone end -->
+            <div class="container" >
+                <div class="mil-menu-content">
+                    <div class="row">
+                        <div class="col-xl-5">
+
+                            <nav class="mil-main-menu" id="swupMenu">
+                                <ul>
+                                    <li class="mil-has-children mil-active">
+                                        <a href="/">{{__('general.home')}}</a>
+
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="/about-us">{{__('general.about us')}}</a>
+
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="/services">{{__('general.services')}}</a>
+
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="/portfolio">{{__('general.portfolio')}}</a>
+
+                                    </li>
+
+                                    <li class="mil-has-children">
+                                        <a href="/contact">{{__('general.contact')}}</a>
+
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="#.">{{__('general.English')}}</a>
+                                        <ul>
+                                            <li><a href="/change-language/en">{{__('general.English')}}</a></li>
+                                            <li><a href="/change-language/ar">{{__('general.Arabic')}}</a></li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                        <div class="col-xl-7">
+
+                            <div class="mil-menu-right-frame">
+                                <div class="mil-animation-in">
+                                    <div class="mil-animation-frame">
+                                        <div class="mil-animation mil-position-1 mil-scale" data-value-1="2" data-value-2="2"></div>
+                                    </div>
+                                </div>
+                                <div class="mil-menu-right">
+                                    <div class="row">
+                                        <div class="col-lg-8 mil-mb-60">
+
+                                            <h6 class="mil-muted mil-mb-30">Projects</h6>
+
+                                            <ul class="mil-menu-list">
+                                                <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
+                                                <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
+                                                <li><a href="project-3.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
+                                                <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
+                                                <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
+                                                <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-lg-4 mil-mb-60">
+
+                                            <h6 class="mil-muted mil-mb-30">Useful links</h6>
+
+                                            <ul class="mil-menu-list">
+                                                <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
+                                                <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
+                                                <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
+                                                <li><a href="#." class="mil-light-soft">Careers</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <div class="mil-divider mil-mb-60"></div>
+                                    <div class="row justify-content-between">
+
+                                        <div class="col-lg-4 mil-mb-60">
+
+                                            <h6 class="mil-muted mil-mb-30">Canada</h6>
+
+                                            <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
+
+                                        </div>
+                                        <div class="col-lg-4 mil-mb-60">
+
+                                            <h6 class="mil-muted mil-mb-30">Germany</h6>
+
+                                            <p class="mil-light-soft">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu -->
+
+        <!-- curtain -->
+        <div class="mil-curtain"></div>
+        <!-- curtain end -->
+
+        <!-- frame -->
+        <div class="mil-frame">
+            <div class="mil-frame-top">
+                <a href="/" class="mil-logo">C.</a>
+                <div class="mil-menu-btn">
+                    <span></span>
+                </div>
+            </div>
+            <div class="mil-frame-bottom">
+                <div class="mil-current-page"></div>
+                <div class="mil-back-to-top">
+                    <a href="#top" class="mil-link mil-dark mil-arrow-place">
+                        <span>Back to top</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- frame end -->
+
+
+        @yield('content')
 
 
     </div>
-</section>
-<!-- Footer / End -->
+    <!-- wrapper end -->
 
-<a id="back-to-top" href="#" class="btn btn-default btn-filled" style="display: inline">
-    <i class="fa-brands fa-whatsapp" style="padding: 2px"></i>
-
-</a>
-<div class="modal modal-video fade in" id="modalVideo" role="dialog" style="display: none;">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<iframe width="595" height="339" src="assets/img/videoo.mp4" allowfullscreen="1" autoplay="1"></iframe>
-		</div>
-	</div>
-</div>
-@include('layouts.scripts')
+    <!-- jQuery js -->
+    <script src="{{asset('assets/js/plugins/jquery.min.js')}}"></script>
+    <!-- swup js -->
+    <script src="{{asset('assets/js/plugins/swup.min.js')}}"></script>
+    <!-- swiper js -->
+    <script src="{{asset('assets/js/plugins/swiper.min.js')}}"></script>
+    <!-- fancybox js -->
+    <script src="{{asset('assets/js/plugins/fancybox.min.js')}}"></script>
+    <!-- gsap js -->
+    <script src="{{asset('assets/js/plugins/gsap.min.js')}}"></script>
+    <!-- scroll smoother -->
+    <script src="{{asset('assets/js/plugins/smooth-scroll.js')}}"></script>
+    <!-- scroll trigger js -->
+    <script src="{{asset('assets/js/plugins/ScrollTrigger.min.js')}}"></script>
+    <!-- scroll to js -->
+    <script src="{{asset('assets/js/plugins/ScrollTo.min.js')}}"></script>
+    <!-- ashley js -->
+    <script src="{{asset('assets/js/main.js')}}"></script>
 
 </body>
 

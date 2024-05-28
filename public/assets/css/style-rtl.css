@@ -1,0 +1,66 @@
+
+
+.mil-banner-content h1{
+    direction:rtl;
+  }
+
+.mil-banner-content .paragraph {
+      direction:rtl;
+    }
+
+
+p{
+    font-family: "Noto Sans Arabic", sans-serif;
+    font-weight: 600
+}
+a{
+    font-family: "Noto Sans Arabic", sans-serif;
+}
+a span{
+    font-family: "Noto Sans Arabic", sans-serif;
+    font-weight: 600
+}
+button span{
+    font-family: "Noto Sans Arabic", sans-serif;
+    font-weight: 600
+}
+#contact input{
+    font-family: "Noto Sans Arabic", sans-serif;
+    font-weight: 900
+}
+#contact textarea{
+    font-family: "Noto Sans Arabic", sans-serif;
+    font-weight: 900
+}
+.call h2{
+    direction: rtl;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Noto Sans Arabic", sans-serif;
+}
+
+#about{
+    direction: rtl;
+}
+#contact .container{
+    direction: rtl;
+}
+#contact .container button{
+    direction: ltr;
+}
+
+.mil-services-grid-item h5{
+    direction: rtl;
+}
+
+.mil-menu-frame .container{
+    direction: rtl;
+}
+.footer .container{
+    direction: rtl;
+}
+
+
+.footer .mil-subscribe-form{
+    direction: ltr;
+}

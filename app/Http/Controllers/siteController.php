@@ -51,6 +51,11 @@ class SiteController extends Controller
     return view('services');
    }
 
+   public function serviceDetails(string $key)
+   {
+    $data = Config('serviceData.data.'.$key);
+    return view('service-single',compact('data'));
+   }
    public function contactUs(ContactRequest $request)
    {
         $data = $request->validated();
