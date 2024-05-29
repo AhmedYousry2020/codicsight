@@ -181,156 +181,34 @@
                             <div class="col-lg-9">
                                 <div class="swiper-container mil-portfolio-slider mil-up">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
+                                    @foreach($portfolios as $portfolio)
+                                    <div class="swiper-slide">
 
-                                            <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
-                                                <div class="mil-cover-frame mil-drag">
-                                                    <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                        <img src="{{asset('assets/img/works/1.jpg')}}" alt="cover">
-                                                    </div>
-                                                </div>
-                                                <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0">
-                                                    <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <div class="mil-labels mil-mb-15">
-                                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                                        </div>
-                                                        <h5>Interior design studio</h5>
-                                                    </div>
-                                                    <div data-swiper-parallax-y="120" data-swiper-parallax-opacity="0">
-                                                        <a href="/portfolio-single" class="mil-button mil-arrow-place">
-                                                            <span>View Project</span>
-                                                        </a>
-                                                    </div>
+                                        <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
+                                            <div class="mil-cover-frame mil-drag">
+                                                <div class="mil-cover" data-swiper-parallax-scale="1.3">
+                                                    <img src="{{asset('storage/uploads/'.$portfolio->main_image)}}" alt="cover">
                                                 </div>
                                             </div>
-
-                                        </div>
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
-                                                <div class="mil-cover-frame mil-drag">
-                                                    <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                        <img src="{{asset('assets/img/works/2.jpg')}}" alt="cover">
+                                            <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0">
+                                                <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
+                                                    <div class="mil-labels mil-mb-15">
+                                                        <div class="mil-label mil-upper mil-accent">{{$portfolio->{'category_'.getLocale()} }}</div>
+                                                        <div class="mil-label mil-upper">may 24 2023</div>
                                                     </div>
+                                                    <h5>{{$portfolio->{'name_'.getLocale()} }}</h5>
                                                 </div>
-                                                <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0">
-                                                    <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <div class="mil-labels mil-mb-15">
-                                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                                        </div>
-                                                        <h5>Home Security Camera</h5>
-                                                    </div>
-                                                    <div data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <a href="project-2.html" class="mil-button mil-arrow-place">
-                                                            <span>View Project</span>
-                                                        </a>
-                                                    </div>
+                                                <div data-swiper-parallax-y="120" data-swiper-parallax-opacity="0">
+                                                    <a href="/portfolio/{{$portfolio->id}}/details" class="mil-button mil-arrow-place">
+                                                        <span>View Project</span>
+                                                    </a>
                                                 </div>
                                             </div>
-
                                         </div>
-                                        <div class="swiper-slide">
 
-                                            <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
-                                                <div class="mil-cover-frame mil-drag">
-                                                    <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                        <img src="{{asset('assets/img/works/3.jpg')}}" alt="cover">
-                                                    </div>
-                                                </div>
-                                                <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0">
-                                                    <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <div class="mil-labels mil-mb-15">
-                                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                                        </div>
-                                                        <h5>Kemia Honest Skincare</h5>
-                                                    </div>
-                                                    <div data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <a href="project-3.html" class="mil-button mil-arrow-place">
-                                                            <span>View Project</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    </div>
 
-                                        </div>
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
-                                                <div class="mil-cover-frame mil-drag">
-                                                    <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                        <img src="{{asset('assets/img/works/4.jpg')}}" alt="cover">
-                                                    </div>
-                                                </div>
-                                                <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0">
-                                                    <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <div class="mil-labels mil-mb-15">
-                                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                                        </div>
-                                                        <h5>Cascade of Lava</h5>
-                                                    </div>
-                                                    <div data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <a href="project-4.html" class="mil-button mil-arrow-place">
-                                                            <span>View Project</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
-                                                <div class="mil-cover-frame mil-drag">
-                                                    <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                        <img src="{{asset('assets/img/works/5.jpg')}}" alt="cover">
-                                                    </div>
-                                                </div>
-                                                <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0">
-                                                    <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <div class="mil-labels mil-mb-15">
-                                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                                        </div>
-                                                        <h5>Air Pro by Molekule</h5>
-                                                    </div>
-                                                    <div data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <a href="project-5.html" class="mil-button mil-arrow-place">
-                                                            <span>View Project</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
-                                                <div class="mil-cover-frame mil-drag">
-                                                    <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                        <img src="{{asset('assets/img/works/6.jpg')}}" alt="cover">
-                                                    </div>
-                                                </div>
-                                                <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0">
-                                                    <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <div class="mil-labels mil-mb-15">
-                                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                                        </div>
-                                                        <h5>Tony's Chocolonely</h5>
-                                                    </div>
-                                                    <div data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <a href="project-6.html" class="mil-button mil-arrow-place">
-                                                            <span>View Project</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
+                                    @endforeach
                                     </div>
                                 </div>
                             </div>

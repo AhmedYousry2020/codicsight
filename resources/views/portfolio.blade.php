@@ -39,114 +39,27 @@
                         <div class="mil-lines-place mil-lines-long"></div>
 
                         <div class="row justify-content-between align-items-center">
+                            @foreach($portfolios as $portfolio)
+
                             <div class="col-lg-5">
 
-                                <a href="/portfolio-single" class="mil-portfolio-item mil-more mil-mb-60">
+                                <a href="/portfolio/{{$portfolio->id}}/details" class="mil-portfolio-item mil-more mil-mb-60">
                                     <div class="mil-cover-frame mil-vert mil-up">
                                         <div class="mil-cover">
-                                            <img src="{{asset('assets/img/works/1.jpg')}}" alt="cover">
+                                            <img src="{{asset('storage/uploads/'.$portfolio->main_image)}}" alt="cover">
                                         </div>
                                     </div>
                                     <div class="mil-descr">
                                         <div class="mil-labels mil-up mil-mb-15">
-                                            <div class="mil-label mil-upper mil-accent">Branding</div>
+                                            <div class="mil-label mil-upper mil-accent">{{$portfolio->{'category_'.getLocale()} }}</div>
                                             <div class="mil-label mil-upper">may 24 2023</div>
                                         </div>
-                                        <h4 class="mil-up">Interior design studio</h4>
+                                        <h4 class="mil-up">{{$portfolio->{'name_'.getLocale()} }}</h4>
                                     </div>
                                 </a>
 
                             </div>
-                            <div class="col-lg-6">
-
-                                <a href="/portfolio-single" class="mil-portfolio-item mil-more mil-parallax mil-mb-60" data-value-1="60" data-value-2="-60">
-                                    <div class="mil-cover-frame mil-hori mil-up">
-                                        <div class="mil-cover">
-                                            <img src="{{asset('assets/img/works/2.jpg')}}" alt="cover">
-                                        </div>
-                                    </div>
-                                    <div class="mil-descr">
-                                        <div class="mil-labels mil-up mil-mb-15">
-                                            <div class="mil-label mil-upper mil-accent">Design</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                        </div>
-                                        <h4 class="mil-up">Home Security Camera</h4>
-                                    </div>
-                                </a>
-
-                            </div>
-                            <div class="col-lg-6">
-
-                                <a href="/portfolio-single" class="mil-portfolio-item mil-more mil-parallax mil-mb-60" data-value-1="60" data-value-2="-60">
-                                    <div class="mil-cover-frame mil-hori mil-up">
-                                        <div class="mil-cover">
-                                            <img src="{{asset('assets/img/works/3.jpg')}}" alt="cover">
-                                        </div>
-                                    </div>
-                                    <div class="mil-descr">
-                                        <div class="mil-labels mil-up mil-mb-15">
-                                            <div class="mil-label mil-upper mil-accent">Design</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                        </div>
-                                        <h4 class="mil-up">Kemia Honest Skincare</h4>
-                                    </div>
-                                </a>
-
-                            </div>
-                            <div class="col-lg-5">
-
-                                <a href="/portfolio-single" class="mil-portfolio-item mil-more mil-mb-60">
-                                    <div class="mil-cover-frame mil-vert mil-up">
-                                        <div class="mil-cover">
-                                            <img src="{{asset('assets/img/works/4.jpg')}}" alt="cover">
-                                        </div>
-                                    </div>
-                                    <div class="mil-descr">
-                                        <div class="mil-labels mil-up mil-mb-15">
-                                            <div class="mil-label mil-upper mil-accent">Photography</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                        </div>
-                                        <h4 class="mil-up">Cascade of Lava</h4>
-                                    </div>
-                                </a>
-
-                            </div>
-                            <div class="col-lg-5">
-
-                                <a href="/portfolio-single" class="mil-portfolio-item mil-more mil-mb-60">
-                                    <div class="mil-cover-frame mil-vert mil-up">
-                                        <div class="mil-cover">
-                                            <img src="{{asset('assets/img/works/5.jpg')}}" alt="cover">
-                                        </div>
-                                    </div>
-                                    <div class="mil-descr">
-                                        <div class="mil-labels mil-up mil-mb-15">
-                                            <div class="mil-label mil-upper mil-accent">Design</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                        </div>
-                                        <h4 class="mil-up">Air Pro by Molekule</h4>
-                                    </div>
-                                </a>
-
-                            </div>
-                            <div class="col-lg-6">
-
-                                <a href="/portfolio-single" class="mil-portfolio-item mil-more mil-parallax mil-mb-60" data-value-1="60" data-value-2="-60">
-                                    <div class="mil-cover-frame mil-hori mil-up">
-                                        <div class="mil-cover">
-                                            <img src="{{asset('assets/img/works/6.jpg')}}" alt="cover">
-                                        </div>
-                                    </div>
-                                    <div class="mil-descr">
-                                        <div class="mil-labels mil-up mil-mb-15">
-                                            <div class="mil-label mil-upper mil-accent">Design</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                        </div>
-                                        <h4 class="mil-up">Tony's Chocolonely</h4>
-                                    </div>
-                                </a>
-
-                            </div>
+@endforeach
                         </div>
                     </div>
                 </section>

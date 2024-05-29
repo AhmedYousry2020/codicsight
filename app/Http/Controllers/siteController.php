@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ContactRequest;
+use App\Models\Portfolio;
 use App\Notifications\ContactUS;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -55,6 +56,13 @@ class SiteController extends Controller
    {
     $data = Config('serviceData.data.'.$key);
     return view('service-single',compact('data'));
+   }
+   public function portfolioDetails($id)
+   {
+    $portfolio = Portfolio::findOrFail($id);
+
+    return view('portfolio-single',compact('portfolio'));
+
    }
    public function contactUs(ContactRequest $request)
    {

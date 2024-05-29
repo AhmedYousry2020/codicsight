@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\SiteController;
+use App\Models\Portfolio;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 
@@ -18,7 +19,8 @@ use Illuminate\Support\Facades\Session;
 Route::get('/', function () {
     $lang = Session::get('lang', 'en');
     app()->setLocale($lang);
-    return view('index');
+    $portfolios = Portfolio::all();
+    return view('index',compact('portfolios'));
 });
 
 
@@ -30,14 +32,10 @@ Route::get('/services', function () {
 
 Route::get('/portfolio', function () {
     $lang = Session::get('lang', 'en');
-    app()->setLocale($lang);
-    return view('portfolio');
-});
+    $portfolios = Portfolio::all();
 
-Route::get('/portfolio-single', function () {
-    $lang = Session::get('lang', 'en');
     app()->setLocale($lang);
-    return view('portfolio-single');
+    return view('portfolio',compact('portfolios'));
 });
 
 Route::get('/service-single', function () {
@@ -58,15 +56,12 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/single-portfolio', function () {
-    $lang = Session::get('lang', 'en');
-    app()->setLocale($lang);
-    return view('portfolio-single');
-});
 
 
 Route::controller(SiteController::class)->group(function(){
     Route::get('/service/{key}/details','serviceDetails');
+    Route::get('/portfolio/{id}/details','portfolioDetails');
+
 });
 
 Route::get('/change-language/en', function () {

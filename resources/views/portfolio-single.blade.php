@@ -30,15 +30,15 @@
             <section class="mil-p-120-0">
                 <div class="container mil-p-0-120" id="project">
                     <div class="mil-image-frame mil-horizontal mil-up">
-                        <img src="{{asset('assets/img/works/1/1.jpg')}}" alt="image">
-                        <a data-fancybox="gallery" data-no-swup href="{{asset('assets/img/works/1/1.jpg')}}" class="mil-zoom-btn">
-                            <img src="img/icons/zoom.svg" alt="zoom">
+                        <img src="{{asset('storage/uploads/'.$portfolio->main_image)}}" alt="image">
+                        <a data-fancybox="gallery" data-no-swup href="{{asset('storage/uploads/'.$portfolio->main_image)}}" class="mil-zoom-btn">
+                            <img src="{{asset('assets/img/icons/zoom.svg')}}" alt="zoom">
                         </a>
                     </div>
                     <div class="mil-info mil-up">
-                        <div>Client: &nbsp;;<span class="mil-dark">Envato Market</span></div>
+                        <div>Client: &nbsp;;<span class="mil-dark">{{$portfolio->client}}</span></div>
                         <div>Date: &nbsp;;<span class="mil-dark">April 2023</span></div>
-                        <div>Author: &nbsp;;<span class="mil-dark">Paul Trueman</span></div>
+                        <div>Author: &nbsp;;<span class="mil-dark">{{$portfolio->Author}}</span></div>
                     </div>
                     <div class="mil-p-120-0">
 
@@ -46,9 +46,9 @@
                             <div class="col-lg-6">
 
                                 <div class="mil-image-frame mil-square mil-up mil-mb-30">
-                                    <img src="{{asset('assets/img/works/1/2.jpg')}}" alt="image">
-                                    <a data-fancybox="gallery" data-no-swup href="{{asset('assets/img/works/1/2.jpg')}}" class="mil-zoom-btn">
-                                        <img src="img/icons/zoom.svg" alt="zoom">
+                                    <img src="{{asset('storage/uploads/'.$portfolio->image_1)}}" alt="image">
+                                    <a data-fancybox="gallery" data-no-swup href="{{asset('storage/uploads/'.$portfolio->image_1)}}" class="mil-zoom-btn">
+                                        <img src="{{asset('assets/img/icons/zoom.svg')}}" alt="zoom">
                                     </a>
                                 </div>
 
@@ -56,9 +56,9 @@
                             <div class="col-lg-6">
 
                                 <div class="mil-image-frame mil-square mil-up mil-mb-30">
-                                    <img src="{{asset('assets/img/works/1/3.jpg')}}" alt="image">
-                                    <a data-fancybox="gallery" data-no-swup href="{{asset('assets/img/works/1/3.jpg')}}" class="mil-zoom-btn">
-                                        <img src="img/icons/zoom.svg" alt="zoom">
+                                    <img src="{{asset('storage/uploads/'.$portfolio->image_2)}}" alt="image">
+                                    <a data-fancybox="gallery" data-no-swup href="{{asset('storage/uploads/'.$portfolio->image_2)}}" class="mil-zoom-btn">
+                                        <img src="{{asset('assets/img/icons/zoom.svg')}}" alt="zoom">
                                     </a>
                                 </div>
 
@@ -66,9 +66,9 @@
                             <div class="col-lg-6">
 
                                 <div class="mil-image-frame mil-square mil-up mil-mb-30">
-                                    <img src="{{asset('assets/img/works/1/4.jpg')}}" alt="image">
-                                    <a data-fancybox="gallery" data-no-swup href="{{asset('assets/img/works/1/4.jpg')}}" class="mil-zoom-btn">
-                                        <img src="img/icons/zoom.svg" alt="zoom">
+                                    <img src="{{asset('storage/uploads/'.$portfolio->image_3)}}" alt="image">
+                                    <a data-fancybox="gallery" data-no-swup href="{{asset('storage/uploads/'.$portfolio->image_3)}}" class="mil-zoom-btn">
+                                        <img src="{{asset('assets/img/icons/zoom.svg')}}" alt="zoom">
                                     </a>
                                 </div>
 
@@ -76,9 +76,9 @@
                             <div class="col-lg-6">
 
                                 <div class="mil-image-frame mil-square mil-up mil-mb-30">
-                                    <img src="{{asset('assets/img/works/1/5.jpg')}}" alt="image">
-                                    <a data-fancybox="gallery" data-no-swup href="{{asset('assets/img/works/1/5.jpg')}}" class="mil-zoom-btn">
-                                        <img src="img/icons/zoom.svg" alt="zoom">
+                                    <img src="{{asset('storage/uploads/'.$portfolio->image_4)}}" alt="image">
+                                    <a data-fancybox="gallery" data-no-swup href="{{asset('storage/uploads/'.$portfolio->image_4)}}" class="mil-zoom-btn">
+                                        <img src="{{asset('assets/img/icons/zoom.svg')}}" alt="zoom">
                                     </a>
                                 </div>
 
@@ -89,8 +89,7 @@
                                 <h3 class="mil-up mil-mb-60">Simplicity, elegance, innovation!</h3>
                             </div>
                             <div class="col-lg-6">
-                                <p class="mil-up mil-mb-30">A home surveillance camera that pays great attention to security and user privacy, featuring two modes to provide security while protecting personal privacy.The camera has an open and closed mode, we define the product to have clear two sides, expressing two working states and emotions.</p>
-
+                                <p class="mil-up mil-mb-30">{{$portfolio->{'description_'.getLocale()} }}</p>
                                 <p class="mil-up">Presents a simple and quiet state when not in use, delivering a gentle and security.At the same time, the camera can adapt to a variety of environments, providing elegant ways of wall hanging and standing installation.</p>
                             </div>
                         </div>
@@ -98,9 +97,9 @@
                             <div class="col-lg-6">
 
                                 <div class="mil-image-frame mil-vertical mil-up mil-mb-30">
-                                    <img src="{{asset('assets/img/works/1/6.jpg')}}" alt="image">
-                                    <a data-fancybox="gallery" data-no-swup href="{{asset('assets/img/works/1/6.jpg')}}" class="mil-zoom-btn">
-                                        <img src="img/icons/zoom.svg" alt="zoom">
+                                    <img src="{{asset('storage/uploads/'.$portfolio->thumbnail_1)}}" alt="image">
+                                    <a data-fancybox="gallery" data-no-swup href="{{asset('storage/uploads/'.$portfolio->thumbnail_1)}}" class="mil-zoom-btn">
+                                        <img src="{{asset('assets/img/icons/zoom.svg')}}" alt="zoom">
                                     </a>
                                 </div>
 
@@ -108,9 +107,9 @@
                             <div class="col-lg-6">
 
                                 <div class="mil-image-frame mil-vertical mil-up mil-mb-30">
-                                    <img src="{{asset('assets/img/works/1/7.jpg')}}" alt="image">
-                                    <a data-fancybox="gallery" data-no-swup href="{{asset('assets/img/works/1/7.jpg')}}" class="mil-zoom-btn">
-                                        <img src="img/icons/zoom.svg" alt="zoom">
+                                    <img src="{{asset('storage/uploads/'.$portfolio->thumbnail_2)}}" alt="image">
+                                    <a data-fancybox="gallery" data-no-swup href="{{asset('storage/uploads/'.$portfolio->thumbnail_2)}}" class="mil-zoom-btn">
+                                        <img src="{{asset('assets/img/icons/zoom.svg')}}" alt="zoom">
                                     </a>
                                 </div>
 
