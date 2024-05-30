@@ -5,6 +5,8 @@ namespace App\Http\Controllers\AdminControllers;
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use App\Models\Portfolio;
+use Illuminate\Support\Str;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Session;
@@ -68,32 +70,32 @@ class PortfolioController extends Controller
        $requestAll = $validator->validated();
         if($request->hasFile('main_image'))
         {
-            $requestAll['main_image'] = storeImage($requestAll['main_image'], '/uploads');
+            $requestAll['main_image'] = $this->storeImage($requestAll['main_image'], '/uploads');
         }
         if($request->hasFile('image_1'))
         {
-            $requestAll['image_1'] = storeImage($requestAll['image_1'], '/uploads');
+            $requestAll['image_1'] = $this->storeImage($requestAll['image_1'], '/uploads');
         }
         if($request->hasFile('image_2'))
         {
-            $requestAll['image_2'] = storeImage($requestAll['image_2'], '/uploads');
+            $requestAll['image_2'] = $this->storeImage($requestAll['image_2'], '/uploads');
         }
         if($request->hasFile('image_3'))
         {
-            $requestAll['image_3'] = storeImage($requestAll['image_3'], '/uploads');
+            $requestAll['image_3'] = $this->storeImage($requestAll['image_3'], '/uploads');
         }
         if($request->hasFile('image_4'))
         {
-            $requestAll['image_4'] = storeImage($requestAll['image_4'], '/uploads');
+            $requestAll['image_4'] = $this->storeImage($requestAll['image_4'], '/uploads');
         }
 
         if($request->hasFile('thumbnail_1'))
         {
-            $requestAll['thumbnail_1'] = storeImage($requestAll['thumbnail_1'], '/uploads');
+            $requestAll['thumbnail_1'] = $this->storeImage($requestAll['thumbnail_1'], '/uploads');
         }
         if($request->hasFile('thumbnail_2'))
         {
-            $requestAll['thumbnail_2'] = storeImage($requestAll['thumbnail_2'], '/uploads');
+            $requestAll['thumbnail_2'] = $this->storeImage($requestAll['thumbnail_2'], '/uploads');
         }
        $portfolio = Portfolio::create($requestAll);
 
@@ -163,32 +165,32 @@ class PortfolioController extends Controller
        $requestAll = $validator->validated();
         if($request->hasFile('main_image'))
         {
-            $requestAll['main_image'] = storeImage($requestAll['main_image'], '/uploads');
+            $requestAll['main_image'] = $this->storeImage($requestAll['main_image'], '/uploads');
         }
         if($request->hasFile('image_1'))
         {
-            $requestAll['image_1'] = storeImage($requestAll['image_1'], '/uploads');
+            $requestAll['image_1'] = $this->storeImage($requestAll['image_1'], '/uploads');
         }
         if($request->hasFile('image_2'))
         {
-            $requestAll['image_2'] = storeImage($requestAll['image_2'], '/uploads');
+            $requestAll['image_2'] = $this->storeImage($requestAll['image_2'], '/uploads');
         }
         if($request->hasFile('image_3'))
         {
-            $requestAll['image_3'] = storeImage($requestAll['image_3'], '/uploads');
+            $requestAll['image_3'] = $this->storeImage($requestAll['image_3'], '/uploads');
         }
         if($request->hasFile('image_4'))
         {
-            $requestAll['image_4'] = storeImage($requestAll['image_4'], '/uploads');
+            $requestAll['image_4'] = $this->storeImage($requestAll['image_4'], '/uploads');
         }
 
         if($request->hasFile('thumbnail_1'))
         {
-            $requestAll['thumbnail_1'] = storeImage($requestAll['thumbnail_1'], '/uploads');
+            $requestAll['thumbnail_1'] = $this->storeImage($requestAll['thumbnail_1'], '/uploads');
         }
         if($request->hasFile('thumbnail_2'))
         {
-            $requestAll['thumbnail_2'] = storeImage($requestAll['thumbnail_2'], '/uploads');
+            $requestAll['thumbnail_2'] = $this->storeImage($requestAll['thumbnail_2'], '/uploads');
         }
        if($portfolio->update($requestAll)){
         return response()->json(['success' => true, 'redirect' => route('dashboard.portfolios.index')]);
@@ -206,5 +208,15 @@ class PortfolioController extends Controller
         $portfolio = Portfolio::findOrFail($id);
         $portfolio->delete();
         return response()->json(['success' => true, 'redirect' => route('dashboard.portfolios.index')]);
+    }
+
+    private function storeImage($photo, $folder)
+    {
+        $file_extension = $photo->getClientOriginalExtension();
+        $file_name = Str::uuid() . '.' . $file_extension;
+        $saved = $photo->storeAs($folder, $file_name, ['disk' => 'public']);
+        if ($saved) {
+            return $file_name;
+        }
     }
 }
