@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\SiteController;
 use App\Models\Portfolio;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
@@ -57,11 +56,9 @@ Route::get('/contact', function () {
 });
 
 
-
-Route::controller(SiteController::class)->group(function(){
-    Route::get('/service/{key}/details','serviceDetails');
-    Route::get('/portfolio/{id}/details','portfolioDetails');
-
+Route::get('/portfolio/{id}/details', function($id) {
+    $portfolio = Portfolio::findOrFail($id);
+    return view('portfolio-single',compact('portfolio'));
 });
 
 Route::get('/change-language/en', function () {
